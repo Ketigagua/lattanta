@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-X97DgXO/J2I5jKZP7w/L5i5bPkxI+v+jn5pARjrxdN72GFLhtXt+cjOhkGdZzTrqfW/Bp8dV+SlrHr1tV/egeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b64c1fd979.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Latana</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="logo" src="images/logo.png" alt="logo" />
+        <nav class="nav">
+          <ul class="nav_header">
+            <li class="items">Home</li>
+            <li class="items">Menu</li>
+            <li class="items">Blog</li>
+            <li class="items">Our Story</li>
+          </ul>
+        </nav>
+        <button class="login_button" onclick="togglePopup()">Log in</button>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+      <div class="popup" id="loginPopup">
+        <div class="popup__content">
+          <h2 class="popup__heading">Log in</h2>
+          <form class="popup__form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="popup__submit">Log in</button>
+          </form>
+          <p class="popup__text">Don't have an account? <a href="#" class="popup__link">Register</a></p>
+          <button class="popup__close" onclick="togglePopup()">X</button>
+        </div>
+      </div>
+
+      <!-- Section 1  -->
+
+      <section class="section">
+        <div class="section__headline">
+          <div>  
+            <h1 class="main__heading">Latest news</h1>
+          </div>
+          <div class="search__container">
+            <div class="search__bar">
+              <input type="text" placeholder="Enter your search query...">
+              <i class="fa fa-search search__icon"></i>
+            </div>
+            
+          </div>
+        </div>
+        
+
+        <div class="card__container"></div>
+
+        <!-- =========Pagination========= -->
+        <div class="pagination">
+      
+      </section>
+
+      <!-- End od Section -->
+       <!-- footer -->
+
+      
+       <footer class="footer">
+        <div class="about">
+          <h2 class="footer_title">About</h2>
+          <p class="footerItems">Lorem ipsum</p>
+          <p class="footerItems">Lorem ipsum</p>
+          <p class="footerItems">Lorem ipsum</p>
+          <p class="footerItems">Lorem ipsum</p>
+        </div>
+        <div class="policy">
+          <h2 class="footer_title">Policy</h2>
+          <p class="footerItems">Lorem ipsum</p>
+          <p class="footerItems">Lorem ipsum</p>
+          <p class="footerItems">Lorem ipsum</p>
+   
+        </div>
+        <div class="contact">
+          <h2 class="footer_title">Contact</h2>
+          <p class="footerItems">Lorem ipsum</p>
+          <p class="footerItems">Lorem ipsum</p>
+          <p class="footerItems">Lorem ipsum</p>
+          <p class="footerItems">Lorem ipsum</p>
+        </div>
+        <div class="joinUs">
+          <h2 class="footer_title">Come Join Us</h2>
+          <div class="inputMail">
+            <input
+              type="text"
+              placeholder="Enter email"
+              name="enterMail"
+              class="enterMail"
+              id="enterMail"
+            />
+            <button class="inputBtn">></button>
+          </div>
+
+          <div class="socialIcons">
+            <a href="https://www.facebook.com" target="_blank"
+              ><div class="icons facebook">
+                <i class="fa-brands fa-facebook-f"></i></div
+            ></a>
+            <a href="https://www.instagram.com" target="_blank">
+              <div class="icons instagram">
+                <i class="fa-brands fa-instagram"></i></div
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><div class="icons twitter">
+                <i class="fa-brands fa-twitter"></i></div
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
+
